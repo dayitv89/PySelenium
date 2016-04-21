@@ -1,12 +1,12 @@
 # PySelenium
 Python selenium [testing]
-![status](imgs/status.svg)
-![version](imgs/version.svg)
+![status](/imgs/status.svg)
+![version](/imgs/version.svg)
 
 ### Dependencies
-- ![Platform](imgs/platform.svg)(May work on linux)
-- ![Language=Py3.5](imgs/language.svg)(May work on python 2.7)
-- ![Tool=Selenium-2.53.2](imgs/tool.svg)
+- ![Platform](/imgs/platform.svg)(May work on linux)
+- ![Language=Py3.5](/imgs/language.svg)(May work on python 2.7)
+- ![Tool=Selenium-2.53.2](/imgs/tool.svg)
 - Google Chrome-50.0 browser(It will also work on other browser, need to change drivers)
 - chromedriver_mac32.zip web browser driver (Also available for linux)
 
