@@ -1,21 +1,21 @@
 ###-
-###- Hockey bulk worker single program, single process with Google chrome 
+###- Hockey bulk worker single program, single process with Google chrome
 ###-
 ###- GauravDS
 ###- JAMES Selenium Module(b)
 ###-
 
 
-### configurations 
+### configurations
 web_opening_time = 3
 json_file_name = 'hockey_apps.json'
 platform = 'iOS'
-## login details 
+## login details
 hockey_user = "<your hockey app email_id>"
 hockey_pwd = "<your hockey app password>"
-## webhook details 
-webhook_name = 'Punchh iOS Crashes'
-webhook_url = 'https://google.com'
+## webhook details
+webhook_name = 'iOS Hook'
+webhook_url = 'http://xyz.abc'
 
 
 ### read json data from file
@@ -30,12 +30,12 @@ def wait():
 
 
 ### Selenium automation
-#- download http://chromedriver.storage.googleapis.com/index.html?path=2.21/ 
+#- download http://chromedriver.storage.googleapis.com/index.html?path=2.21/
 #- details https://sites.google.com/a/chromium.org/chromedriver/downloads
 from selenium import webdriver
 
 ## Selenium web drivers
-driver = None   
+driver = None
 ## load web driver for selenium : chrome
 def web_driver_load():
 	global driver
@@ -63,7 +63,7 @@ def webhooks(app_id, wh_name, wh_url):
 	web_obj.send_keys(wh_name)
 	web_obj = driver.find_element_by_id('webhook_url')
 	web_obj.send_keys(wh_url)
-	# web_obj.submit()
+	web_obj.submit()
 
 
 ### Main Method
